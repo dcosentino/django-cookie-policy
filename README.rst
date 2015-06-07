@@ -2,14 +2,16 @@ Django cookie policy
 =====================
 
 django-cookie-policy is a reusable application for managing visitors consent with respect to the cookies law in Django project.
+It allows a server side control of all the feature of the website that are cookie-related.
 
 Features:
+-------------
 
-* cookies are stored in the visitor browser
-
-* a variable called ``cookie_accepted`` is be added automatically to all the templates
+* a variable called ``cookie_accepted`` is added automatically to all the templates
 
 * cookie acceptance banner and cookie policy page are already availbale for customization
+
+* cookies are stored in the visitor browser
 
 
 Configuration
