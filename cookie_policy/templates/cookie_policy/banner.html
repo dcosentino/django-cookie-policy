@@ -1,0 +1,26 @@
+{% load i18n %}
+<style>
+#confirmCookie {
+  background: none repeat scroll 0 0 rgba(0,0,0,0.6);
+  margin: 0;
+  position: fixed;
+  transition: all 0.5s ease-out 0s;
+  z-index: 9999;
+  box-shadow: -2px 0 15px #999;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+#confirmCookie p {
+ padding: 10px;
+}
+</style>
+<div id="confirmCookie">
+  <p>
+    I cookie ci aiutano a fornire i nostri servizi e a renderli il più possibile efficienti e semplici da utilizzare. Utilizzando tali servizi e navigando i nostri siti, accetti implicitamente il nostro utilizzo dei cookie. Per maggiori informazioni sui dati registrati dai cookie, si prega di consultare la nostra Privacy Policy. <br/>
+    <a class="btn btn-primary pull-right" href="{% url 'acceptCookiePolicy' %}">{% trans "COOKIE_INFO_OK" %}</a>
+    <br/>
+  </p>
+</div>
+
