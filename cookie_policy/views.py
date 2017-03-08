@@ -1,11 +1,10 @@
 #-*- coding: utf-8 -*-
 import datetime
 
-from django.shortcuts import render_to_response
+from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
-from django.views.decorators.csrf import csrf_exempt
-from django.template import RequestContext
+
 
 
 def set_cookie(response, key, value, days_expire = 7):
@@ -42,5 +41,4 @@ def acceptCookiePolicy_view(request):
 
 
 def policy_view(request):
-    return render_to_response('cookie_policy/policy.html', {},
-                              context_instance=RequestContext(request))
+    return render(request, 'cookie_policy/policy.html', {})
